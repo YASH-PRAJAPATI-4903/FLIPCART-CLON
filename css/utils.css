@@ -1,0 +1,25 @@
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    background-color: #2874f0;
+    border:none;
+    height: 30px;
+    width: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.my-2{
+    margin: 20px 0;
+}
+
+.my-1{
+    margin: 3px  0 ;
+}
+.text-center{
+    text-align: center;
+}

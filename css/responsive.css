@@ -1,0 +1,24 @@
+@media screen and (max-width:1000px){
+    /* body{
+
+    } */
+    nav{
+        flex-direction: column;
+    }
+    .slider{
+        height: 50vh;
+    }
+    .logo{
+        justify-content: center;
+        margin: 12px 0;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+    }
+    .contanar{
+        text-size-adjust: 20px;
+    }
+}

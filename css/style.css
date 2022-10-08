@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100&display=swap');
+
+:root {
+    --main-bg-color: #2874f0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: var(--main-bg-color);    
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 88px;
+    padding: 0 25px;
+}
+
+nav ul {
+    height: 6vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    
+    color: white; 
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: yellow;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 30vw;
+    height: 20px;
+    border-radius: 2px;
+    margin: 0 10px 0 50px;
+    padding:  0 10px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    width: 22vw;
+    margin: 12px auto;
+    /* overflow: hidden; */
+}
+.slider img:hover{
+    animation: flip;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes flip{
+
+    from{
+        width: 22vw;
+    }
+    to{
+        width: 30vw;
+    }
+}
+.card{
+    user-select: none;
+    background-color: bisque;
+    max-width: 91vw;
+    margin: auto;
+}
+.card:hover{
+    color: brown;
+    max-width: 93vw;
+    font-weight: bolder;
+}
+
+.card h2{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid brown;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    overflow:scroll;
+    /* justify-content: center; */
+}
+.card-item{
+    width: 20vw;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 22px ;
+    border: 1px solid brown;
+}
+.card-itam:hover{
+    animation: carditam;
+    animation-duration: 1s;
+
+}
+@keyframes carditam {
+    from{
+        width: 20vw;
+    }
+    to{
+        width: 23vw;
+    }
+}
+.container{
+    min-height: calc(100vh - 6vh - 10vh);
+    margin-bottom: 20px;
+}
+footer {
+    height: 8.4vh;
+    background-color: var(--main-bg-color);
+    color: white;
+    font-family: 'Noto Sans Mono', monospace;
+}
